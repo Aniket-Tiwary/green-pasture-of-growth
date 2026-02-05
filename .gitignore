@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build outputs (can be regenerated from src/input.css)
+# Uncomment if you want to exclude build outputs:
+# dist/
+
+# Playwright test outputs
+test-results/
+playwright-report/
+playwright/.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Debug output
+.npmrc
+
+# Agent/AI files
+.agent/
+
+# Design reference files (large videos)
+design/

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The Green Pasture of Growth - A calming, supportive space for motivation and encouragement">
+  <title>The Green Pasture of Growth</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Mali:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="min-h-screen overflow-x-hidden bg-stone-900">
+
+  <!-- Atmospheric Background -->
+  <div class="fixed inset-0 -z-10">
+    <img src="./assets/background.png" alt="" class="w-full h-full object-cover" aria-hidden="true">
+    <!-- Soft overlay for depth -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="relative z-10 min-h-screen flex flex-col">
+
+    <!-- Glassmorphism Header -->
+    <header class="w-full px-4 py-4 md:py-6">
+      <nav class="max-w-4xl mx-auto">
+        <div class="glass-nav rounded-full px-6 py-3 md:px-8 md:py-4 flex items-center justify-center">
+          <span class="font-title text-2xl md:text-3xl text-stone-800 tracking-wide">
+            The Green Pasture of Growth
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex-1 flex flex-col items-center justify-center px-6 py-8 text-center">
+
+      <!-- Subtitle -->
+      <p class="font-mali text-sm md:text-base text-white tracking-widest uppercase mb-4 text-shadow-strong">
+        A Moment of Encouragement
+      </p>
+
+      <!-- Main Quote - Signpost -->
+      <div id="main-signpost" class="mb-8">
+        <h1 class="font-title text-5xl md:text-6xl lg:text-7xl text-white leading-tight text-shadow-strong">
+          Growth is a Season,<br>
+          Not a Score.
+        </h1>
+      </div>
+
+      <!-- Description -->
+      <p class="font-mali text-lg md:text-xl text-white/90 max-w-md leading-relaxed mb-10 text-shadow-soft">
+        Click on the cute animal babies, they have a message for you.
+      </p>
+
+      <!-- CTA Button -->
+      <button id="boost-button"
+        class="glass-button rounded-full px-8 py-4 font-mali text-base md:text-lg text-stone-700 font-medium hover:text-stone-900 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-300/50"
+        aria-label="Boost your energy with a celebration of leaves">
+        ✨ Boost Energy ✨
+      </button>
+    </section>
+
+    <!-- Animals - Positioned organically -->
+    <div class="fixed inset-0 pointer-events-none z-20">
+
+      <!-- Cow 1 - Bottom Left -->
+      <button
+        class="animal pointer-events-auto absolute bottom-[12%] left-[6%] md:left-[10%] focus:outline-none focus:ring-4 focus:ring-amber-300/50 rounded-2xl p-2 transition-all duration-300"
+        id="cow-1" aria-label="Click for encouragement" tabindex="0">
+        <div class="animal-card glass-card rounded-2xl p-3 md:p-4">
+          <svg width="80" height="60" viewBox="0 0 100 80" class="w-16 h-12 md:w-20 md:h-16 drop-shadow-sm">
+            <!-- Refined Cow SVG -->
+            <defs>
+              <linearGradient id="cowBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FEFCF3" />
+                <stop offset="100%" style="stop-color:#E8E4D9" />
+              </linearGradient>
+              <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15" />
+              </filter>
+            </defs>
+            <!-- Body -->
+            <ellipse cx="50" cy="48" rx="32" ry="22" fill="url(#cowBody)" filter="url(#softShadow)" />
+            <!-- Spots - organic shapes -->
+            <ellipse cx="35" cy="45" rx="9" ry="7" fill="#3D3D3D" opacity="0.85" />
+            <ellipse cx="58" cy="52" rx="11" ry="8" fill="#3D3D3D" opacity="0.85" />
+            <ellipse cx="68" cy="40" rx="6" ry="5" fill="#3D3D3D" opacity="0.85" />
+            <!-- Head -->
+            <ellipse cx="50" cy="24" rx="16" ry="13" fill="url(#cowBody)" filter="url(#softShadow)" />
+            <!-- Ears -->
+            <ellipse cx="34" cy="14" rx="5" ry="3.5" fill="#E8E4D9" transform="rotate(-25, 34, 14)" />
+            <ellipse cx="66" cy="14" rx="5" ry="3.5" fill="#E8E4D9" transform="rotate(25, 66, 14)" />
+            <!-- Eyes -->
+            <ellipse cx="43" cy="22" rx="3" ry="3.5" fill="#2D2D2D" />
+            <ellipse cx="57" cy="22" rx="3" ry="3.5" fill="#2D2D2D" />
+            <circle cx="44" cy="21" r="1" fill="white" opacity="0.8" />
+            <circle cx="58" cy="21" r="1" fill="white" opacity="0.8" />
+            <!-- Snout -->
+            <ellipse cx="50" cy="30" rx="8" ry="5" fill="#D4C4A8" />
+            <circle cx="47" cy="30" r="1.5" fill="#5C5C5C" />
+            <circle cx="53" cy="30" r="1.5" fill="#5C5C5C" />
+            <!-- Legs -->
+            <rect x="28" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="40" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="54" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="66" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+          </svg>
+        </div>
+      </button>
+
+      <!-- Cow 2 - Bottom Right -->
+      <button
+        class="animal pointer-events-auto absolute bottom-[15%] right-[5%] md:right-[12%] focus:outline-none focus:ring-4 focus:ring-amber-300/50 rounded-2xl p-2 transition-all duration-300"
+        id="cow-2" aria-label="Click for encouragement" tabindex="0">
+        <div class="animal-card glass-card rounded-2xl p-3 md:p-4">
+          <svg width="70" height="55" viewBox="0 0 100 80"
+            class="w-14 h-11 md:w-16 md:h-14 drop-shadow-sm transform -scale-x-100">
+            <defs>
+              <linearGradient id="cowBody2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FEFCF3" />
+                <stop offset="100%" style="stop-color:#E8E4D9" />
+              </linearGradient>
+            </defs>
+            <!-- Body -->
+            <ellipse cx="50" cy="48" rx="32" ry="22" fill="url(#cowBody2)" />
+            <!-- Spots -->
+            <ellipse cx="40" cy="48" rx="7" ry="10" fill="#3D3D3D" opacity="0.85" />
+            <ellipse cx="62" cy="44" rx="9" ry="7" fill="#3D3D3D" opacity="0.85" />
+            <!-- Head -->
+            <ellipse cx="50" cy="24" rx="16" ry="13" fill="url(#cowBody2)" />
+            <!-- Head spot -->
+            <ellipse cx="55" cy="18" rx="5" ry="4" fill="#3D3D3D" opacity="0.85" />
+            <!-- Ears -->
+            <ellipse cx="34" cy="14" rx="5" ry="3.5" fill="#E8E4D9" transform="rotate(-25, 34, 14)" />
+            <ellipse cx="66" cy="14" rx="5" ry="3.5" fill="#E8E4D9" transform="rotate(25, 66, 14)" />
+            <!-- Eyes -->
+            <ellipse cx="43" cy="22" rx="3" ry="3.5" fill="#2D2D2D" />
+            <ellipse cx="57" cy="22" rx="3" ry="3.5" fill="#2D2D2D" />
+            <circle cx="44" cy="21" r="1" fill="white" opacity="0.8" />
+            <circle cx="58" cy="21" r="1" fill="white" opacity="0.8" />
+            <!-- Snout -->
+            <ellipse cx="50" cy="30" rx="8" ry="5" fill="#D4C4A8" />
+            <circle cx="47" cy="30" r="1.5" fill="#5C5C5C" />
+            <circle cx="53" cy="30" r="1.5" fill="#5C5C5C" />
+            <!-- Legs -->
+            <rect x="28" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="40" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="54" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+            <rect x="66" y="62" width="6" height="12" rx="2.5" fill="#E8E4D9" />
+          </svg>
+        </div>
+      </button>
+
+      <!-- Cat 1 - Left side (Orange tabby) -->
+      <button
+        class="animal pointer-events-auto absolute bottom-[35%] left-[3%] md:left-[5%] focus:outline-none focus:ring-4 focus:ring-amber-300/50 rounded-2xl p-2 transition-all duration-300"
+        id="cat-1" aria-label="Click for encouragement" tabindex="0">
+        <div class="animal-card glass-card rounded-2xl p-3 md:p-4">
+          <svg width="60" height="55" viewBox="0 0 70 70" class="w-12 h-11 md:w-14 md:h-14 drop-shadow-sm">
+            <defs>
+              <linearGradient id="orangeFur" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#E9A54B" />
+                <stop offset="100%" style="stop-color:#D4893A" />
+              </linearGradient>
+            </defs>
+            <!-- Body -->
+            <ellipse cx="35" cy="44" rx="20" ry="16" fill="url(#orangeFur)" />
+            <!-- Tabby stripes -->
+            <path d="M22 40 Q27 36 32 40" stroke="#B8753A" stroke-width="2.5" fill="none" opacity="0.6" />
+            <path d="M35 38 Q40 34 45 38" stroke="#B8753A" stroke-width="2.5" fill="none" opacity="0.6" />
+            <!-- Head -->
+            <circle cx="35" cy="24" r="14" fill="url(#orangeFur)" />
+            <!-- Ears -->
+            <polygon points="24,14 20,2 30,10" fill="#E9A54B" />
+            <polygon points="46,14 50,2 40,10" fill="#E9A54B" />
+            <polygon points="25,12 22,4 29,9" fill="#D4C4A8" />
+            <polygon points="45,12 48,4 41,9" fill="#D4C4A8" />
+            <!-- Eyes -->
+            <ellipse cx="29" cy="22" rx="3.5" ry="4.5" fill="#4A7C4E" />
+            <ellipse cx="41" cy="22" rx="3.5" ry="4.5" fill="#4A7C4E" />
+            <ellipse cx="29" cy="22" rx="1.5" ry="3.5" fill="#2D2D2D" />
+            <ellipse cx="41" cy="22" rx="1.5" ry="3.5" fill="#2D2D2D" />
+            <circle cx="28" cy="20" r="1" fill="white" opacity="0.7" />
+            <circle cx="40" cy="20" r="1" fill="white" opacity="0.7" />
+            <!-- Nose -->
+            <polygon points="35,28 32,31 38,31" fill="#D4A574" />
+            <!-- Whiskers -->
+            <line x1="22" y1="28" x2="12" y2="26" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="22" y1="30" x2="12" y2="31" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="48" y1="28" x2="58" y2="26" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="48" y1="30" x2="58" y2="31" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <!-- Tail -->
+            <path d="M53 48 Q66 40 62 54" stroke="#E9A54B" stroke-width="5" fill="none" stroke-linecap="round" />
+            <!-- Paws -->
+            <ellipse cx="22" cy="58" rx="5" ry="3.5" fill="#E9A54B" />
+            <ellipse cx="48" cy="58" rx="5" ry="3.5" fill="#E9A54B" />
+          </svg>
+        </div>
+      </button>
+
+      <!-- Cat 2 - Right side (Calico) -->
+      <button
+        class="animal pointer-events-auto absolute bottom-[38%] right-[4%] md:right-[8%] focus:outline-none focus:ring-4 focus:ring-amber-300/50 rounded-2xl p-2 transition-all duration-300"
+        id="cat-2" aria-label="Click for encouragement" tabindex="0">
+        <div class="animal-card glass-card rounded-2xl p-3 md:p-4">
+          <svg width="55" height="50" viewBox="0 0 70 70"
+            class="w-11 h-10 md:w-12 md:h-12 drop-shadow-sm transform -scale-x-100">
+            <defs>
+              <linearGradient id="calicoBg" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FEFCF3" />
+                <stop offset="100%" style="stop-color:#F0EBE0" />
+              </linearGradient>
+            </defs>
+            <!-- Body -->
+            <ellipse cx="35" cy="44" rx="20" ry="16" fill="url(#calicoBg)" />
+            <!-- Calico patches -->
+            <ellipse cx="26" cy="42" rx="7" ry="9" fill="#E9A54B" opacity="0.9" />
+            <ellipse cx="46" cy="46" rx="9" ry="7" fill="#3D3D3D" opacity="0.85" />
+            <!-- Head -->
+            <circle cx="35" cy="24" r="14" fill="url(#calicoBg)" />
+            <!-- Head patches -->
+            <ellipse cx="26" cy="20" rx="7" ry="6" fill="#E9A54B" opacity="0.9" />
+            <ellipse cx="46" cy="26" rx="5" ry="4.5" fill="#3D3D3D" opacity="0.85" />
+            <!-- Ears -->
+            <polygon points="24,14 20,2 30,10" fill="#F0EBE0" />
+            <polygon points="46,14 50,2 40,10" fill="#F0EBE0" />
+            <polygon points="25,12 22,4 29,9" fill="#D4C4A8" />
+            <polygon points="45,12 48,4 41,9" fill="#D4C4A8" />
+            <!-- Eyes -->
+            <ellipse cx="29" cy="22" rx="3.5" ry="4.5" fill="#6BA3C7" />
+            <ellipse cx="41" cy="22" rx="3.5" ry="4.5" fill="#6BA3C7" />
+            <ellipse cx="29" cy="22" rx="1.5" ry="3.5" fill="#2D2D2D" />
+            <ellipse cx="41" cy="22" rx="1.5" ry="3.5" fill="#2D2D2D" />
+            <circle cx="28" cy="20" r="1" fill="white" opacity="0.7" />
+            <circle cx="40" cy="20" r="1" fill="white" opacity="0.7" />
+            <!-- Nose -->
+            <polygon points="35,28 32,31 38,31" fill="#D4A574" />
+            <!-- Whiskers -->
+            <line x1="22" y1="28" x2="12" y2="26" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="22" y1="30" x2="12" y2="31" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="48" y1="28" x2="58" y2="26" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <line x1="48" y1="30" x2="58" y2="31" stroke="#8B7355" stroke-width="0.8" opacity="0.6" />
+            <!-- Tail -->
+            <path d="M53 48 Q66 40 62 54" stroke="#3D3D3D" stroke-width="5" fill="none" stroke-linecap="round" />
+            <!-- Paws -->
+            <ellipse cx="22" cy="58" rx="5" ry="3.5" fill="#F0EBE0" />
+            <ellipse cx="48" cy="58" rx="5" ry="3.5" fill="#F0EBE0" />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </main>
+
+  <!-- Quote Plaque Modal -->
+  <div id="quote-plaque" class="quote-plaque hidden">
+    <div id="plaque-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40" aria-hidden="true"></div>
+    <div class="fixed inset-0 flex items-center justify-center z-50 pointer-events-none p-6">
+      <div class="plaque-content glass-modal rounded-3xl p-8 md:p-10 max-w-md mx-auto relative pointer-events-auto">
+        <p id="quote-text" class="font-mali text-xl md:text-2xl text-stone-700 text-center leading-relaxed">
+          <!-- Quote inserted by JS -->
+        </p>
+        <button
+          class="absolute -top-3 -right-3 w-10 h-10 bg-stone-100 text-stone-600 rounded-full flex items-center justify-center text-xl font-light shadow-lg hover:bg-amber-100 hover:text-stone-800 transition-all duration-200"
+          onclick="hideQuote()" aria-label="Close quote">
+          ×
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
